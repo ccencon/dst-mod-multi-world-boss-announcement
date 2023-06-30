@@ -34,7 +34,7 @@ else
 end
 
 local function GetWorldName(inst)
-    local index = (inst.components.worldmigrator or {}).linkedWorld
+    local index = GLOBAL.TheShard:GetShardId()
     return index and worldname[index] or "未知世界"
 end
 
