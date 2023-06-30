@@ -1,50 +1,13 @@
 # Multi-World Boss Announcement
 
-## Overview
+## Statement
 
-This is a mod for the game of Don't Starve Together which is available in the Steam Workshop. 
+fork from <https://github.com/jupitersh/dst-mod-multi-world-boss-announcement>
 
-System announce upon boss killing and players will say how many days left before the hounds or worm attack arrive.
+respect the src.
 
-This mod is only developed for dedicated servers with multiple world(at least three shards).
+## Modify
 
-Do not use it if not holding a dedicated server.
+Most of the time, the file `modoverrides.lua` is the same in different clusters. From my tactic, i will copy this file to the game root dir and create symbolic links to it. But in the src code, we must modify separate `modoverrides.lua` in different clusters, i have to modify the src code to fit my tactic
 
-**Mod Usage:**
-
-Change every `modoverrides.lua` in every World Shards:
-
-```
-["workshop-1817697604"]={ 
-    configuration_options={
-        WorldName="XXX",
-        HoundAttackAnnounce=true,
-    },
-    enabled=true
-},
-```
-
-> Replace XXX with world name.
-
-If you are not holding a multi-world server, turn to this one: [Boss Announcement](https://steamcommunity.com/sharedfiles/filedetails/?id=1894295075).
-
-Special thanks to [Flynn](https://steamcommunity.com/id/flynn_s) for his help of multi-language support.
-
-## Changelog
-
-### Version 1.5.3
-    
-- Removed fish announcement.
-- Add kill announcement and respawning announcement for the new boss of crab king.
-
-### Version 1.5.0
-    
-- Added announce when a fish was put in the Fish Scale-O-Matic.
-
-### Version 1.3
-
-- Add Klaus Sack will announce upon appearing.
-
-## License
-
-Released under the [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Another reason is that i want to add the new boss announcement in "Don't Starve: Shipwrecked"

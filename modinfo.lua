@@ -1,7 +1,7 @@
 name = "Multi-World Boss Announcement"
-description = ""
-author = "辣椒小皇纸"
-version = "1.5.3"
+description = "使modoverrides.lua配置一致，并加入海滩boss击杀传闻"
+author = "叶问"
+version = "1.5.5"
 
 all_clients_require_mod = false
 client_only_mod = false
@@ -13,17 +13,8 @@ icon = "modicon.tex"
 configuration_options =
 {
 	{
-		name = "WorldName", --多层世界对应的世界名字 
-		label = "World Name",
-		hover = "",
-		options =	{
-						{description = "AAA", data = "AAA"},
-						{description = "BBB", data = "BBB"},
-						{description = "CCC", data = "CCC"},
-						{description = "DDD", data = "DDD"},
-						{description = "EEE", data = "EEE"},
-						{description = "FFF", data = "FFF"},
-					},
-		default = "XXX",
+		name = "WorldName",
+		label = "世界名字",
+		default = {["1"] = "洛兰", ["2"] = "洛兰深处", ["3"] = "西海岸", ["4"] = "西海岸防线", ["5"] = "无声悲鸣"},
 	},
 }
